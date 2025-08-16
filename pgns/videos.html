@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos básicos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO -->
+    <title>Videos - Richie Alvarado | Videos Musicales y Contenido Audiovisual</title>
+    <meta name="description" content="Disfruta de los videos musicales de Richie Alvarado. Videos oficiales, presentaciones en vivo y contenido exclusivo.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body class="page-videos">
+    <!-- Video de fondo -->
+    <div class="video-background-wrapper">
+        <video class="video-background" autoplay muted loop playsinline>
+            <source src="../videos/Preso.mp4" type="video/mp4">
+            <source src="../videos/Preso.webm" type="video/webm">
+            <p>Tu navegador no soporta el elemento de video.</p>
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="main-nav" aria-label="Navegación principal">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="musica.html">Música</a></li>
+                <li><a href="videos-2.html" class="active">Videos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <section class="page-hero">
+            <h1 class="page-title">Mis Videos</h1>
+            <p class="page-subtitle">Descubre mi contenido audiovisual</p>
+        </section>
+
+        <!-- Sección de videos -->
+        <section class="videos-section">
+            <h2 class="visually-hidden">Lista de videos</h2>
+            
+            <div class="videos-grid">
+                <!-- Video destacado -->
+                <article class="video-item video-item--featured">
+                    <div class="video-thumbnail">
+                        <img src="../images/video-thumb-1.jpg" alt="Video Preso - Richie Alvarado">
+                        <button class="play-button" aria-label="Reproducir video Preso">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <h3 class="video-title">Preso</h3>
+                    <p class="video-info">Video Oficial • 2024</p>
+                </article>
+
+                <!-- Más videos -->
+                <article class="video-item">
+                    <div class="video-thumbnail">
+                        <img src="../images/video-thumb-2.jpg" alt="Video - Richie Alvarado">
+                        <button class="play-button" aria-label="Reproducir video">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <h3 class="video-title">Título del Video</h3>
+                    <p class="video-info">Video Oficial • 2024</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal para reproducir videos -->
+    <div class="video-modal" id="videoModal" aria-hidden="true">
+        <div class="video-modal__content">
+            <button class="video-modal__close" aria-label="Cerrar video">
+                <span>&times;</span>
+            </button>
+            <div class="video-modal__player">
+                <!-- El iframe del video se insertará aquí dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/scripts.js"></script>
+</body>
+</html>
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richie Alvarado</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <style>
+        /* Elimina márgenes y relleno por defecto */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Contenedor del video de fondo */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Asegura que el video quede detrás del contenido */
+            object-fit: cover; /* Asegura que el video cubra toda la pantalla */
+        }
+
+        /* Estilo del contenido de la página */
+        .content {
+            position: relative;
+            z-index: 1; /* Asegura que el contenido esté encima del video */
+            color: white; /* Para que el texto sea legible */
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <video class="video-background" autoplay muted loop>
+        <source src="../videos/Preso.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html" id="home">Inicio</a></li>
+                <li><a href="musica.html" id="music">Música</a></li>
+                <li><a href="videos-2.html" id="music">Vídeos</a></li>
+                <li><a href="eventos.html" id="photos">Eventos</a></li>
+                <li><a href="fotos.html" id="photos">Fotos</a></li>
+                <li><a href="contacto.html" id="contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script src="../scripts/scripts.js"></script>
+</body>
+</html>
+-->

@@ -1,3 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    background-position: center;
+    background-image: url('../images/portada.png');
+    background-repeat: no-repeat;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #222;
+    background-image: linear-gradient(to bottom, #190a05, #870000);
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #fff;
+    background-image: linear-gradient(to bottom, #b88606,#fff);
+    background-image: url(../fotos/perfume-solo.jpg);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card2 {
+    background: #fff;
+    background-image: linear-gradient(to bottom, #b88606,#fff);
+    background-image: url(../fotos/Richie-S.png);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    height: 190px;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card2:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#main-content {
+    margin-top: 20px;
+    min-height: 150px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.acerca{
+    font-family: Garamond, serif;   
+    font-size: 18px;
+    font-weight: bold;
+    color: silver;
+    text-align: justify;
+    margin-top: 5px;
+    margin-left: 190px;
+    margin-right: 505px;
+}
+
 .tabla{
     margin-left: 200px;
+}
+
+Redes sociales flotantes 
+.redes-sociales {
+    position: absolute;
+    top: 300px; 
+    left: 30%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px; 
+    z-index: 100; 
+}
+
+Estilo de los íconos 
+.redes-sociales .icono img {
+    width: 40px; 
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.redes-sociales .icono img:hover {
+    transform: scale(1.2);
 }

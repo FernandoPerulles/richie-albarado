@@ -149,22 +149,22 @@ body.page-home {
 /* Fondos específicos para cada card */
 .card--about a {
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                      url('../fotos/Richie-S.png');
+                      url();
 }
 
 .card--music a {
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                      url('../fotos/perfume-solo.jpg');
+                      url();
 }
 
 .card--events a {
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                      url('../fotos/Richie-S.png');
+                      url();
 }
 
 .card--photos a {
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                      url('../fotos/perfume-solo.jpg');
+                      url();
 }
 
 .card__text {
